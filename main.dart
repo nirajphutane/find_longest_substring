@@ -7,7 +7,7 @@ main(){
 }
 
 String maxSubString(String input){
-  String maxSubstring = ''; int maxOccurrence = 0;
+  String maxSubstring = '';;
   for(int offset = 1; offset < input.length; offset++){
     for(int position = 0; position < (input.length/offset).ceil()+1; position++){
       if(position+offset <= input.length){
@@ -21,3 +21,4 @@ String maxSubString(String input){
     }
   }
   return maxSubstring;
+}
